@@ -200,6 +200,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4A-iX-qSn">
                                         <rect key="frame" x="0.0" y="90.5" width="345" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed:" destination="jOl-gi-ylB" eventType="touchUpInside" id="NuB-xM-PFd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -243,6 +246,7 @@
                         <outlet property="questionProgressView" destination="zch-uh-bJA" id="Qwa-l8-Xuc"/>
                         <outlet property="rangedLabel1" destination="AOW-Qz-0qZ" id="6pK-JA-9Mu"/>
                         <outlet property="rangedLabel2" destination="KfI-6K-uU3" id="cQs-mW-5bH"/>
+                        <outlet property="rangedSlider" destination="pgA-XG-IME" id="w45-U4-fpU"/>
                         <outlet property="rangedStackView" destination="dXT-nj-6V0" id="Ot9-78-uyQ"/>
                         <outlet property="singleButton1" destination="rOA-n2-sRU" id="C3I-hq-1Oy"/>
                         <outlet property="singleButton2" destination="GHH-Io-0ua" id="y8q-vf-Zmt"/>
@@ -285,6 +289,10 @@
                     <navigationItem key="navigationItem" title="Results" id="xpF-C1-oJQ">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="5rc-af-DP7"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="OH0-7s-zvp" id="9CC-dZ-7cD"/>
+                        <outlet property="resultDefinitionLabel" destination="kJO-XY-DEa" id="WJe-QI-IXo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TC-aR-iEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -35,7 +35,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var rangedStackView: UIStackView!
     @IBOutlet weak var rangedLabel1: UILabel!
     @IBOutlet weak var rangedLabel2: UILabel!
-    @IBOutlet weak var rangedSllider: UISlider!
+    @IBOutlet weak var rangedSlider: UISlider!
     
     @IBOutlet weak var questionProgressView: UIProgressView!
     
@@ -92,7 +92,7 @@ class QuestionViewController: UIViewController {
     @IBAction func rangedAnswerButtonPressed(_ sender: UIButton) {
         
         let currentAnswers = questions[questionIndex].answers
-        let index = Int(round(rangedSllider.value * Float(currentAnswers.count - 1)))
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
         answersChosen.append(currentAnswers[index])
         
         nextQuestion()
@@ -111,6 +111,14 @@ class QuestionViewController: UIViewController {
         } // end if
         
     } // end nextQuestion()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            resultsViewController.responses = answersChosen
+        } // end if
+    }
 
     // Show the question and answer choices to user
     func updateUI() {
@@ -139,7 +147,7 @@ class QuestionViewController: UIViewController {
             updateRangedStack(using: currentAnswers)
         } // end switch {}
         
-    }
+    } // end updateUI()
     
     // Show single stack view and set buttons with appropriate answers
     func updateSingleStack(using answers: [Answer]) {
@@ -171,7 +179,6 @@ class QuestionViewController: UIViewController {
     func updateRangedStack(using answers: [Answer]) {
         
         rangedStackView.isHidden = false
-        rangedSllider.setValue(0.5, animated: false)
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
         
