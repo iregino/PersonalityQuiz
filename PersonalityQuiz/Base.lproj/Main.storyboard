@@ -76,21 +76,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jOl-gi-ylB" eventType="touchUpInside" id="uya-lT-pQC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHH-Io-0ua">
                                         <rect key="frame" x="0.0" y="56" width="345" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jOl-gi-ylB" eventType="touchUpInside" id="0xJ-4W-w4u"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXF-d2-wLX">
                                         <rect key="frame" x="0.0" y="112" width="345" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jOl-gi-ylB" eventType="touchUpInside" id="Gwo-fs-rTr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipk-zZ-bmT">
                                         <rect key="frame" x="0.0" y="168" width="345" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="jOl-gi-ylB" eventType="touchUpInside" id="e3W-pv-zqc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -156,6 +168,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krS-eo-y6o">
                                         <rect key="frame" x="0.0" y="204" width="345" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="mutliAnswerButtonPressed:" destination="jOl-gi-ylB" eventType="touchUpInside" id="y6Q-ue-3uy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -219,6 +234,10 @@
                         <outlet property="multiLabel2" destination="sju-Se-il1" id="VbA-5o-lbC"/>
                         <outlet property="multiLabel3" destination="zpH-0G-Vnu" id="k7q-qx-7qL"/>
                         <outlet property="multiLabel4" destination="5h5-Z2-3Xo" id="5g6-H9-nUR"/>
+                        <outlet property="multiSwitch1" destination="YUO-KM-bWy" id="KEk-PZ-5NB"/>
+                        <outlet property="multiSwitch2" destination="AEJ-Mo-Hkm" id="iHa-fZ-e2J"/>
+                        <outlet property="multiSwitch3" destination="lnR-V1-5Is" id="8hv-Xa-67j"/>
+                        <outlet property="multiSwitch4" destination="u7f-UL-AMS" id="jrZ-rc-jwj"/>
                         <outlet property="multipleStackView" destination="eVC-er-BvU" id="15F-qK-j1q"/>
                         <outlet property="questionLabel" destination="k4P-zG-bKf" id="eCE-RP-CmK"/>
                         <outlet property="questionProgressView" destination="zch-uh-bJA" id="Qwa-l8-Xuc"/>
