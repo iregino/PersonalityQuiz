@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroductionViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wsr-t8-xWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1598" y="134"/>
         </scene>
         <!--Results-->
         <scene sceneID="MUe-ai-MGa">
@@ -283,11 +283,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.6588235294117647" green="0.92941176470588238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="feL-xu-aif"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="xpF-C1-oJQ">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="5rc-af-DP7"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="5rc-af-DP7">
+                            <connections>
+                                <segue destination="cHY-eY-uSL" kind="unwind" unwindAction="unwindToQuizIntroWithUnwindSegue:" id="yAS-xn-jCA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="resultAnswerLabel" destination="OH0-7s-zvp" id="9CC-dZ-7cD"/>
@@ -295,8 +299,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TC-aR-iEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="cHY-eY-uSL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2303" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="afU-KE-ip4">

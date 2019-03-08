@@ -19,12 +19,13 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.hidesBackButton = true
+        
         calculatePersonalityResult()
     
-    }
+    } // end viewDidLoad()
     
-    //
+    // Determine the personality of the user based on the answers to the questions
     func calculatePersonalityResult() {
         
         var frequencyOfAnswers: [AnimalType: Int] = [:]
@@ -44,14 +45,12 @@ class ResultsViewController: UIViewController {
         let mostCommonAnswer = frequencyAnswerSorted.first!.key
         
         // Alternative to above code
-//        let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
+        //  let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
         
         resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
         resultDefinitionLabel.text = mostCommonAnswer.definition
         
     } // end calculatePersonalityResult()
-
-    
 
 
 }
