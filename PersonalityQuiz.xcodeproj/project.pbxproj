@@ -14,6 +14,7 @@
 		F95C9C312231E0660082B8DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C9C2F2231E0660082B8DD /* LaunchScreen.storyboard */; };
 		F95C9C392231EFFC0082B8DD /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C9C382231EFFC0082B8DD /* QuestionViewController.swift */; };
 		F95C9C3B2231F00E0082B8DD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C9C3A2231F00E0082B8DD /* ResultsViewController.swift */; };
+		F95C9C3F22330E7B0082B8DD /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C9C3E22330E7B0082B8DD /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F95C9C322231E0660082B8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F95C9C382231EFFC0082B8DD /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		F95C9C3A2231F00E0082B8DD /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F95C9C3E22330E7B0082B8DD /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F95C9C282231E0650082B8DD /* IntroductionViewController.swift */,
 				F95C9C382231EFFC0082B8DD /* QuestionViewController.swift */,
 				F95C9C3A2231F00E0082B8DD /* ResultsViewController.swift */,
+				F95C9C3E22330E7B0082B8DD /* QuestionData.swift */,
 				F95C9C2A2231E0650082B8DD /* Main.storyboard */,
 				F95C9C2D2231E0660082B8DD /* Assets.xcassets */,
 				F95C9C2F2231E0660082B8DD /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				F95C9C292231E0650082B8DD /* IntroductionViewController.swift in Sources */,
 				F95C9C272231E0650082B8DD /* AppDelegate.swift in Sources */,
+				F95C9C3F22330E7B0082B8DD /* QuestionData.swift in Sources */,
 				F95C9C392231EFFC0082B8DD /* QuestionViewController.swift in Sources */,
 				F95C9C3B2231F00E0082B8DD /* ResultsViewController.swift in Sources */,
 			);
