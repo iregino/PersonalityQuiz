@@ -12,12 +12,17 @@ class IntroductionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+    } // end viewDidLoad()
 
     @IBAction func unwindToQuizIntro(unwindSegue: UIStoryboardSegue) {
-        
-    }
 
+    } // end unwindToQuizIntro
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        questions.shuffle()
+    } // end viewWillAppear()
 }
 

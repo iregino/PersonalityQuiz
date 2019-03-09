@@ -16,6 +16,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var resultAnswerLabel: UILabel!
     @IBOutlet weak var resultDefinitionLabel: UILabel!
     
+    // Hide navigation back button and invoke calculate personality result
     override func viewDidLoad() {
         super.viewDidLoad()
 

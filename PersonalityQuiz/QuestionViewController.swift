@@ -39,12 +39,13 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var questionProgressView: UIProgressView!
     
-    
+    // Update the UI to show first question
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         updateUI()
     } // end viewDidLoad()
+    
     
     // Capture user's answer to single answer question
     @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
