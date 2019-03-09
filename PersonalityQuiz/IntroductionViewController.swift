@@ -22,6 +22,7 @@ class IntroductionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Shuffle the questions
         questions.shuffle()
     } // end viewWillAppear()
 }

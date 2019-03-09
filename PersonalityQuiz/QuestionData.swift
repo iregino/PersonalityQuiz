@@ -2,8 +2,8 @@
 //  QuestionData.swift
 //  PersonalityQuiz
 //
-//  Created by student14 on 3/8/19.
-//  Copyright © 2019 student14. All rights reserved.
+//  Created by Ian Regino on 3/8/19.
+//  Copyright © 2019 Ian Regino. All rights reserved.
 //
 
 import Foundation
