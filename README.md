@@ -2,7 +2,7 @@
 
 ### Description
 
-This is a personality quiz app to determine what animal (:dog:, :cat:, :rabbit:, :turtle:) you would be based on a series of questions.
+This is a personality quiz app to determine what animal (:dog: :cat: :rabbit: :turtle:) you would be based on a series of questions.
 
 ![quiz](https://user-images.githubusercontent.com/44620966/54075391-6af33f80-4264-11e9-8546-f771c86f1a90.png) ![quiz_result](https://user-images.githubusercontent.com/44620966/54075392-6cbd0300-4264-11e9-89cd-2d513476b9cd.png)
 
